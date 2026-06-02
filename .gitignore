@@ -1,0 +1,39 @@
+# C++ build files
+build/
+*.o
+*.out
+*.exe
+*.so
+*.a
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Large/raw physics files
+*.lhe
+*.lhe.gz
+*.hepmc
+*.hepmc.gz
+*.root
+*.h5
+*.dat
+
+# Raw/sensitive folders
+lhe/
+hepmc/
+runs/
+logs/
+raw/
+scratch/
+tmp/
+
+# Keep only small public examples
+outputs/*
+!outputs/examples/
+!outputs/examples/.gitkeep
+
+# System files
+.DS_Store
