@@ -1,4 +1,4 @@
-# cpp-for-hep
+# C++ for High Energy Physics
 
 A small repo for learning C++ for high energy physics analysis.
 
