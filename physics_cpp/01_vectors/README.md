@@ -2,15 +2,12 @@
 
 In this lesson, we use C++ to represent a 3-vector.
 
+This uses:
+
+- [`structs`](../../cpp/05_structs/README.md)
+- [`functions`](../../cpp/04_functions/README.md)
+
 A 3-vector has three components:
-
-```text
-px
-py
-pz
-```
-
-For momentum, we write:
 
 ```text
 p = (px, py, pz)
@@ -32,7 +29,7 @@ This means:
 
 ## Program idea
 
-Use a `struct`:
+Use a `struct` to keep the three components together:
 
 ```cpp
 struct Vector3 {
@@ -72,11 +69,7 @@ p2 = 56744
 
 ## Common mistakes
 
-**Mistake 1: forgetting one component**
-
-A 3-vector needs all three components.
-
-**Mistake 2: using `^` for powers**
+**Mistake 1: using `^` for powers**
 
 In C++, `^` is not power.
 
@@ -91,6 +84,22 @@ not:
 ```text
 px^2
 ```
+
+**Mistake 2: forgetting that the components belong to the object**
+
+Use:
+
+```text
+p.px
+```
+
+not just:
+
+```text
+px
+```
+
+when `px` is inside a struct.
 
 ## Tasks
 

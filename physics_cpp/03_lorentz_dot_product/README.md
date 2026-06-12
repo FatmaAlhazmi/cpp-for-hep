@@ -2,6 +2,12 @@
 
 In this lesson, we compute the Lorentz dot product of two four-vectors.
 
+This uses:
+
+- [`functions`](../../cpp/04_functions/README.md)
+- [`structs`](../../cpp/05_structs/README.md)
+- [`four-vectors`](../02_four_vectors/README.md)
+
 For:
 
 ```text
@@ -23,18 +29,7 @@ a dot b = aE*bE - ax*bx - ay*by - az*bz
 
 ## Program idea
 
-Use the same `FourVector` struct:
-
-```cpp
-struct FourVector {
-    double energy;
-    double px;
-    double py;
-    double pz;
-};
-```
-
-Then write:
+Use the same `FourVector` struct and write:
 
 ```text
 lorentz_dot
@@ -99,14 +94,6 @@ Correct:
 aE*bE - ax*bx - ay*by - az*bz
 ```
 
-**Mistake 2: forgetting the metric convention**
-
-We are using:
-
-```text
-(+,-,-,-)
-```
-
 ## Tasks
 
 Write and run the main program, then do this small task:
@@ -126,8 +113,6 @@ Expected:
 ```text
 p dot p = 856
 ```
-
-The trick is that the same function works for two different four-vectors and for one four-vector dotted with itself.
 
 Solution file:
 

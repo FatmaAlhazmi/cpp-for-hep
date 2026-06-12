@@ -2,9 +2,16 @@
 
 In this lesson, we use simple event-level quantities.
 
+This uses:
+
+- [`structs`](../../cpp/05_structs/README.md)
+- [`functions`](../../cpp/04_functions/README.md)
+- [`vectors and strings`](../../cpp/06_vectors_strings/README.md)
+- [`Lorentz dot product`](../03_lorentz_dot_product/README.md)
+
 An event contains particles. Each particle has a four-vector and usually other information such as charge or id.
 
-For now, we use:
+For now:
 
 ```cpp
 struct Particle {
@@ -16,13 +23,13 @@ struct Particle {
 
 ## Photon energy fraction
 
-For a photon with energy `Egamma`, and centre-of-mass energy `sqrts`, define:
+For a photon with energy `Egamma`, and centre-of-mass energy `sqrts`:
 
 ```text
 xg = 2*Egamma/sqrts
 ```
 
-This is a simple dimensionless energy fraction.
+This is a dimensionless energy fraction.
 
 ## Pair invariant mass
 
@@ -49,7 +56,7 @@ M2 = P dot P
 
 ## Program idea
 
-Write functions:
+Write:
 
 ```text
 add_four_vectors
@@ -64,17 +71,7 @@ photon_x
 
 A total four-vector needs all components added.
 
-**Mistake 2: using sqrt too early**
-
-For now, compute mass squared first:
-
-```text
-M2
-```
-
-Do not take square roots yet.
-
-**Mistake 3: mixing sqrts and s**
+**Mistake 2: mixing sqrts and s**
 
 ```text
 sqrts = centre-of-mass energy

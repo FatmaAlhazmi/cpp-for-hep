@@ -2,13 +2,19 @@
 
 In this lesson, we represent a four-vector in C++.
 
+This uses:
+
+- [`variables and types`](../../cpp/02_variables_types/README.md)
+- [`functions`](../../cpp/04_functions/README.md)
+- [`structs`](../../cpp/05_structs/README.md)
+
 A four-vector has one energy component and three momentum components:
 
 ```text
 p = (E, px, py, pz)
 ```
 
-In code, we use:
+In code:
 
 ```cpp
 struct FourVector {
@@ -19,9 +25,7 @@ struct FourVector {
 };
 ```
 
-## Spatial part
-
-The spatial momentum squared is:
+## Spatial momentum squared
 
 ```text
 p2 = px*px + py*py + pz*pz
@@ -43,7 +47,7 @@ m2 = E*E - px*px - py*py - pz*pz
 
 ## Program idea
 
-Write two functions:
+Write:
 
 ```text
 momentum_squared
@@ -68,7 +72,14 @@ m2 = 856
 
 ## Common mistakes
 
-**Mistake 1: using plus signs for all components**
+**Mistake 1: confusing p2 and m2**
+
+```text
+p2 = spatial momentum squared
+m2 = invariant mass squared
+```
+
+**Mistake 2: using plus signs for all components**
 
 Wrong:
 
@@ -80,13 +91,6 @@ Correct:
 
 ```text
 E*E - px*px - py*py - pz*pz
-```
-
-**Mistake 2: confusing p2 and m2**
-
-```text
-p2 = spatial momentum squared
-m2 = invariant mass squared
 ```
 
 ## Tasks
