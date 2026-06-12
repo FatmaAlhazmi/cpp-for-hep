@@ -2,19 +2,43 @@
 
 In this lesson, we read event values and write a summary table.
 
-Input file:
+This uses:
+
+- [`read and write files`](../../cpp/07_read_write_files/README.md)
+- [`conditions and loops`](../../cpp/03_conditions_loops/README.md)
+- [`parse text`](../../cpp/08_parse_text/README.md)
+
+The input file has one `rho` value per line.
+
+## Region counts
+
+Zero region:
 
 ```text
-small_examples/rhos.txt
+rho < 10
 ```
 
-Output file:
+Side region:
+
+```text
+30 <= rho < 100
+```
+
+Ratio:
+
+```text
+Rzero = zero/side
+```
+
+## Output file
+
+The program writes:
 
 ```text
 outputs/summary.txt
 ```
 
-## Expected output file
+Expected:
 
 ```text
 sample events zero side Rzero
