@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.16)
+
+project(analysis_cpp_lesson05_task)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+add_executable(summary_analysis_task
+    task_solution_main.cpp
+    src/task_solution_analysis.cpp
+)
+
+target_include_directories(summary_analysis_task PRIVATE include)
