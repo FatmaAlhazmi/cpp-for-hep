@@ -2,12 +2,43 @@
 
 In this lesson, we select particles from an event.
 
-Selections:
+This uses:
+
+- [`conditions and loops`](../../cpp/03_conditions_loops/README.md)
+- [`functions`](../../cpp/04_functions/README.md)
+- [`structs`](../../cpp/05_structs/README.md)
+- [`event reader`](../01_event_reader/README.md)
+
+## Selection rules
+
+Charged particle:
 
 ```text
-charged: charge != 0
-muon: pid == 13 or pid == -13
+charge != 0
 ```
+
+Muon:
+
+```text
+pid == 13 or pid == -13
+```
+
+Photon:
+
+```text
+photon line exists
+```
+
+## Program idea
+
+Use small functions:
+
+```text
+is_charged
+is_muon
+```
+
+Then loop over the particles in the event.
 
 ## Expected output
 

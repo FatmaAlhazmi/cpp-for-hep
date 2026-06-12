@@ -1,12 +1,39 @@
 # Lesson 03: Kinematic calculations
 
-In this lesson, we compute event-level kinematic quantities.
+In this lesson, we compute simple event-level kinematic quantities.
 
-We use:
+This uses:
+
+- [`four-vectors`](../../physics_cpp/02_four_vectors/README.md)
+- [`Lorentz dot product`](../../physics_cpp/03_lorentz_dot_product/README.md)
+- [`event kinematics`](../../physics_cpp/04_event_kinematics/README.md)
+- [`event reader`](../01_event_reader/README.md)
+
+## Quantities
+
+Photon energy fraction:
 
 ```text
 xg = 2*Egamma/sqrts
+```
+
+Pair invariant mass squared:
+
+```text
 pair_m2 = (p1 + p2) dot (p1 + p2)
+```
+
+## Program idea
+
+For each event:
+
+```text
+read particles
+find photon
+add first two particle four-vectors
+compute xg
+compute pair_m2
+print event result
 ```
 
 ## Expected output
