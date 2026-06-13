@@ -1,0 +1,18 @@
+import model sm
+
+generate e+ e- > mu+ mu- a
+
+output ee_mumu_gamma_240
+launch ee_mumu_gamma_240
+
+set ebeam1 120
+set ebeam2 120
+set nevents 10000
+
+set ptj 0
+set pta 5
+set etaa 10
+set drll 0
+set drla 0.1
+
+set iseed 1
